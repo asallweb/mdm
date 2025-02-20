@@ -276,15 +276,13 @@ body {
   color: #fff
 }
 .header {
-  padding: 30px 0
+  padding: 25px 0
 }
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(253,253,253,.2)
+  gap: 30px
 }
 .header__main-website {
   display: block;
@@ -306,11 +304,12 @@ body {
   background: url(../img/backgrounds/hero.webp) 0 0/cover no-repeat
 }
 .hero {
-  padding-top: 40px;
   margin-bottom: -98px
 }
 .hero .__container {
-  position: relative
+  position: relative;
+  border-top: 1px solid rgba(253,253,253,.2);
+  padding-top: 60px
 }
 .hero__subtitle {
   font-family: Angst;
@@ -715,6 +714,190 @@ body {
   font-size: 16px;
   letter-spacing: .8px;
   text-transform: uppercase
+}
+.thanks {
+  position: relative
+}
+.thanks::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  width: 100%;
+  height: 963px;
+  background: url(../img/backgrounds/body.webp) center top/cover no-repeat
+}
+.thanks__thanks-title {
+  color: #105c2e;
+  font-family: Angst;
+  font-size: 22px;
+  line-height: normal;
+  margin: 50px auto;
+  text-align: center
+}
+.thanks__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 60px 100px 75px
+}
+.thanks__title {
+  text-align: center;
+  font-family: Angst;
+  font-size: 28px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  margin-bottom: 42px
+}
+.thanks__text {
+  text-align: center;
+  font-weight: 450;
+  line-height: 1.71
+}
+.thanks__text p {
+  margin-bottom: 30px
+}
+.donate {
+  background: url(../img/backgrounds/ask-question.webp) 0 0/cover no-repeat;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  margin: 25px auto;
+  position: relative;
+  height: 250px
+}
+.donate__wrapper::after,
+.donate__wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 91px;
+  height: 209px;
+  background: url(../img/backgrounds/donate-edge.svg) 0 0 no-repeat;
+  right: 20px;
+  top: 20px
+}
+.donate__wrapper::before {
+  left: 20px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.donate__wrapper {
+  padding: 40px 50px
+}
+.donate__title {
+  color: #fff;
+  text-align: center;
+  font-family: Angst;
+  font-size: 28px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  max-width: 620px;
+  margin: 0 auto 35px
+}
+.donate__form {
+  position: relative
+}
+.donate__form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 55px
+}
+.donate__form-cost {
+  border-radius: 10px;
+  border: 1px dashed #fff;
+  width: 95px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 1.33
+}
+.donate__form-cost._minus div {
+  background-color: #38925b;
+  padding-right: 1px;
+  transition: all .3s ease-in-out
+}
+.donate__form-cost._minus div:hover {
+  background: #b6b6b6
+}
+.donate__form-cost._plus div {
+  background-color: #ffac08;
+  padding-left: 1px;
+  transition: all .3s ease-in-out
+}
+.donate__form-cost._plus div:hover {
+  background: #15d260
+}
+.donate__form-cost div {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+  padding-bottom: 2px
+}
+.donate__form-center {
+  border-radius: 10px;
+  background: #fff;
+  width: 275px;
+  height: 55px
+}
+.donate__form-input {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 450;
+  height: 100%;
+  color: #000
+}
+.donate__form-input::-webkit-input-placeholder {
+  color: #000
+}
+.donate__form-input:-ms-input-placeholder {
+  color: #000
+}
+.donate__form-input::-ms-input-placeholder {
+  color: #000
+}
+.donate__form-input::placeholder {
+  color: #000
+}
+.donate__form-submit {
+  border-radius: 10px;
+  background: #ffac09;
+  width: 275px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-family: Angst;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: relative;
+  bottom: -20px;
+  padding-right: 2px;
+  padding-top: 2px;
+  transition: all .3s ease-in-out
+}
+.donate__form-submit:hover {
+  background: #dc9302
 }
 @media (max-width:47.99875em) {
   .menu__body {
