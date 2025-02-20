@@ -276,13 +276,26 @@ body {
   color: #fff
 }
 .header {
-  padding: 25px 0
+  padding: 25px 0;
+  height: 140px
+}
+.header .__container {
+  height: 100%
 }
 .header__wrapper {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px
+  gap: 30px;
+  position: relative
+}
+.header__col._middle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%)
 }
 .header__logo-src {
   width: 100%;
