@@ -196,7 +196,12 @@ body {
   gap: 12px;
   padding: 11px 19px 11px 11px;
   font-family: Angst;
-  text-transform: uppercase
+  text-transform: uppercase;
+  transition: all .3s ease-out
+}
+.subscribe-btn:hover {
+  background: #ffac09;
+  color: #000
 }
 .ask-question-btn {
   background-color: #ffac09;
@@ -208,7 +213,11 @@ body {
   text-transform: uppercase;
   color: #000;
   width: 200px;
-  height: 45px
+  height: 45px;
+  transition: all .3s ease-out
+}
+.ask-question-btn:hover {
+  background: #ffc757
 }
 .green-button {
   border-radius: 10px;
@@ -222,7 +231,11 @@ body {
   letter-spacing: 1.26px;
   text-transform: uppercase;
   width: 352px;
-  height: 80px
+  height: 80px;
+  transition: all .3s ease-out
+}
+.green-button:hover {
+  background: #ffac08
 }
 .pagging {
   margin: 70px 0
@@ -244,7 +257,12 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 15px
+  gap: 15px;
+  transition: all .3s ease-out
+}
+.pagging__arrow:hover {
+  color: #105c2e;
+  text-decoration: underline
 }
 .pagging__arrow:last-child img {
   -webkit-transform: rotate(180deg);
@@ -269,11 +287,65 @@ body {
   width: 50px;
   height: 50px;
   font-size: 18px;
-  font-weight: 450
+  font-weight: 450;
+  transition: all .3s ease-out
+}
+.pagging__item:hover {
+  background: #e4e3e0
 }
 .pagging__item._active {
   background: #b18f41;
   color: #fff
+}
+.checkbox__container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.checkbox__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0
+}
+.checkbox__container .checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 4px
+}
+.checkbox__container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid #0a4926;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.checkbox__container:hover .checkmark {
+  background-color: #ffac09;
+  border: 1px solid #ffac09
+}
+.checkbox__container input:checked~.checkmark {
+  background-color: #ffac09;
+  border-color: transparent
+}
+.checkbox__container input:checked~.checkmark:after {
+  display: block
 }
 .header {
   padding: 25px 0;
@@ -470,6 +542,9 @@ body {
   align-items: center;
   justify-content: space-between
 }
+.section-menu__menu-item {
+  position: relative
+}
 .section-menu__menu-link {
   position: relative;
   display: flex;
@@ -480,7 +555,11 @@ body {
   font-family: "Suisse Intl";
   font-size: 18px;
   font-weight: 450;
-  line-height: 1.44
+  line-height: 1.44;
+  transition: all .3s ease-out
+}
+.section-menu__menu-link:hover {
+  color: #105c2e
 }
 .section-menu__menu-link._active {
   color: #105c2e
@@ -495,6 +574,9 @@ body {
   bottom: -25px;
   left: 0
 }
+.section-menu__sorting {
+  position: relative
+}
 .section-menu__sorting-link {
   position: relative;
   display: flex;
@@ -506,6 +588,38 @@ body {
   font-size: 18px;
   font-weight: 450;
   line-height: 1.44
+}
+.section-menu__submenu {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  border-radius: 4px;
+  background: linear-gradient(0deg,#fff 0,#fff 100%);
+  box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+  padding: 20px;
+  top: 30px;
+  left: -20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-out
+}
+.section-menu__submenu._active {
+  visibility: visible;
+  opacity: 1
+}
+.section-menu__submenu-inner {
+  overflow-y: auto;
+  height: 100%;
+  max-height: 260px
+}
+.section-menu__submenu-link {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.8
+}
+.section-menu__submenu-link:hover {
+  color: #105c2e;
+  text-decoration: underline
 }
 .articles-list {
   margin: 50px 0 100px
@@ -548,6 +662,9 @@ body {
   font-size: 22px;
   line-height: normal;
   margin-bottom: 75px
+}
+.article-item__title:hover {
+  text-decoration: underline
 }
 .article-item__body {
   margin-top: auto
@@ -694,7 +811,11 @@ body {
   color: #fff
 }
 .ask-question__description a {
-  text-decoration: underline
+  text-decoration: underline;
+  transition: all .3s ease-out
+}
+.ask-question__description a:hover {
+  color: #ffac09
 }
 .form-field {
   width: 100%;
@@ -707,7 +828,7 @@ body {
   display: flex;
   align-items: center
 }
-.form-field__title span {
+.form-field__title div {
   font-weight: 400;
   font-size: 16px;
   display: inline-flex;
@@ -724,6 +845,31 @@ body {
   color: #505050;
   font-size: 16px
 }
+.form-field__input._error {
+  border: 1px solid red;
+  color: red
+}
+.form-field__input._error::-webkit-input-placeholder {
+  color: red
+}
+.form-field__input._error:-ms-input-placeholder {
+  color: red
+}
+.form-field__input._error::-ms-input-placeholder {
+  color: red
+}
+.form-field__input._error::placeholder {
+  color: red
+}
+.form-field__select {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 0 25px;
+  color: #aeaeae;
+  font-size: 16px
+}
 .form-field__textarea {
   border-radius: 4px;
   background: #fff;
@@ -732,6 +878,22 @@ body {
   padding: 24px 25px;
   color: #505050;
   font-size: 16px
+}
+.form-field__textarea._error {
+  border: 1px solid red;
+  color: red
+}
+.form-field__textarea._error::-webkit-input-placeholder {
+  color: red
+}
+.form-field__textarea._error:-ms-input-placeholder {
+  color: red
+}
+.form-field__textarea._error::-ms-input-placeholder {
+  color: red
+}
+.form-field__textarea._error::placeholder {
+  color: red
 }
 .form-field__submit {
   border-radius: 10px;
@@ -747,7 +909,15 @@ body {
   font-family: Angst;
   font-size: 16px;
   letter-spacing: .8px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  transition: all .3s ease-out
+}
+.form-field__submit:hover {
+  background: #ffc757
+}
+.form-field__submit:disabled {
+  background: #527e64;
+  cursor: inherit
 }
 .thanks {
   position: relative
@@ -855,22 +1025,26 @@ body {
   color: #fff;
   font-size: 18px;
   font-weight: 450;
-  line-height: 1.33
+  line-height: 1.33;
+  transition: all .3s ease-out
 }
 .donate__form-cost._minus div {
   background-color: #38925b;
   padding-right: 1px;
   transition: all .3s ease-in-out
 }
-.donate__form-cost._minus div:hover {
-  background: #b6b6b6
-}
 .donate__form-cost._plus div {
   background-color: #ffac08;
   padding-left: 1px;
   transition: all .3s ease-in-out
 }
-.donate__form-cost._plus div:hover {
+.donate__form-cost:hover {
+  background: #0c7746
+}
+.donate__form-cost:hover._minus div {
+  background: #b6b6b6
+}
+.donate__form-cost:hover._plus div {
   background: #15d260
 }
 .donate__form-cost div {
@@ -931,7 +1105,7 @@ body {
   transition: all .3s ease-in-out
 }
 .donate__form-submit:hover {
-  background: #dc9302
+  background: #ffc757
 }
 .detail {
   position: relative
@@ -957,15 +1131,18 @@ body {
   padding: 50px 100px
 }
 .detail__back {
-  display: flex;
-  align-items: center;
-  gap: 12px
+  background: url(../img/icons/pagging-arrow.svg) left center no-repeat;
+  padding-left: 35px
 }
 .detail__back._mt-40 {
   margin-top: 40px
 }
 .detail__back._mb-40 {
   margin-bottom: 40px
+}
+.detail__back:hover {
+  background: url(../img/icons/pagging-arrow-hovered.svg) left center no-repeat;
+  color: #105c2e
 }
 .detail__title {
   color: #105c2e;
@@ -1153,10 +1330,16 @@ body {
   height: 100%
 }
 .popular .swiper-button {
+  background: url(../img/icons/swiper-arrow.svg) center center no-repeat;
+  width: 15px;
+  height: 25px;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0,-50%);
   transform: translate(0,-50%)
+}
+.popular .swiper-button:hover {
+  background: url(../img/icons/swiper-arrow-hovered.svg) center center no-repeat
 }
 .popular .swiper-button-prev {
   left: -30px
@@ -1703,10 +1886,17 @@ body {
     margin-right: -15px;
     padding: 25px 15px
   }
-  .section-menu__sorting-link {
+  .section-menu__sorting {
     position: absolute;
     bottom: -50px;
     left: 15px
+  }
+  .section-menu__submenu {
+    left: -5px
+  }
+  .section-menu__menu-item._more {
+    opacity: 0;
+    visibility: hidden
   }
   .articles-list {
     margin: 35px 0 70px
