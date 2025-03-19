@@ -630,7 +630,7 @@ body {
   gap: 70px 50px
 }
 .articles-list .article-item {
-  flex: 1 1 calc(33.333% - 33.333px)
+  flex: 0 1 calc(33.333% - 33.333px)
 }
 .article-item {
   position: relative;
@@ -1454,7 +1454,7 @@ body {
     gap: 60px 35px
   }
   .articles-list .article-item {
-    flex: 1 1 calc(33.333% - 23.333px)
+    flex: 0 1 calc(33.333% - 23.333px)
   }
   .ask-question__wrapper::after,
   .ask-question__wrapper::before {
@@ -1470,7 +1470,7 @@ body {
 }
 @media (max-width:1180px) {
   .articles-list .article-item {
-    flex: 1 1 calc(50% - 35px)
+    flex: 0 1 calc(50% - 35px)
   }
 }
 @media (max-width:1080px) {
@@ -1776,6 +1776,10 @@ body {
   .article-item__image {
     right: -2px
   }
+  .popular .article-item {
+    max-width: 340px;
+    width: 87vw
+  }
 }
 @media (max-width:47.99875em) {
   .menu__body {
@@ -1906,7 +1910,7 @@ body {
     flex-direction: column
   }
   .articles-list .article-item {
-    flex: 1 1 100%
+    flex: 0 1 100%
   }
   .article-item__profile-image {
     width: 45px;
