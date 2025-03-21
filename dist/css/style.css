@@ -525,6 +525,7 @@ body {
   margin: 0 auto
 }
 .section-menu {
+  position: relative;
   margin: 50px 0
 }
 .section-menu__wrapper {
@@ -601,7 +602,7 @@ body {
   left: -20px;
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease-out
+  transition: opacity .3s ease-in-out
 }
 .section-menu__submenu._active {
   visibility: visible;
@@ -1750,7 +1751,8 @@ body {
     font-size: 16px
   }
   .section-menu__wrapper {
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
     padding: 15px
   }
   .section-menu__menu {
@@ -1774,7 +1776,7 @@ body {
     display: none
   }
   .article-item__image {
-    right: -2px
+    right: -2px!important
   }
   .popular .article-item {
     max-width: 340px;
@@ -1897,10 +1899,6 @@ body {
   }
   .section-menu__submenu {
     left: -5px
-  }
-  .section-menu__menu-item._more {
-    opacity: 0;
-    visibility: hidden
   }
   .articles-list {
     margin: 35px 0 70px

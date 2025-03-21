@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250319132432">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250321085426">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,10 +87,13 @@
 					<div class="section-menu__wrapper">
 						<div class="section-menu__menu">
 							<div class="section-menu__menu-item">
-								<a href="" class="section-menu__menu-link _active">Все темы</a>
+								<a href="" class="section-menu__menu-link _active" data-submenu="submenu-1">
+									Все темы
+									<img src="img/icons/link-arrow.svg">
+								</a>
 							</div>
 							<div class="section-menu__menu-item">
-								<a href="" class="section-menu__menu-link">Семья</a>
+								<a href="" class="section-menu__menu-link" data-submenu="submenu-2">Семья</a>
 							</div>
 							<div class="section-menu__menu-item">
 								<a href="" class="section-menu__menu-link">Работа</a>
@@ -101,27 +104,10 @@
 							<div class="section-menu__menu-item">
 								<a href="" class="section-menu__menu-link">Крещение</a>
 							</div>
-							<div class="section-menu__menu-item _hasSubMenu _more">
-								<a href="" class="section-menu__menu-link _linkTogglerSubmenu">
+							<div class="section-menu__menu-item">
+								<a href="" class="section-menu__menu-link ">
 									Еще
-									<img src="img/icons/link-arrow.svg">
 								</a>
-								<div class="section-menu__submenu">
-									<div class="section-menu__submenu-inner">
-										<a href="" class="section-menu__submenu-link">Название</a>
-										<a href="" class="section-menu__submenu-link">Еще одно название</a>
-										<a href="" class="section-menu__submenu-link">Третье название</a>
-										<a href="" class="section-menu__submenu-link">Четвертое название</a>
-										<a href="" class="section-menu__submenu-link">Пятое</a>
-										<a href="" class="section-menu__submenu-link">Шестое название</a>
-										<a href="" class="section-menu__submenu-link">Название</a>
-										<a href="" class="section-menu__submenu-link">Еще одно название</a>
-										<a href="" class="section-menu__submenu-link">Третье название</a>
-										<a href="" class="section-menu__submenu-link">Четвертое название</a>
-										<a href="" class="section-menu__submenu-link">Пятое</a>
-										<a href="" class="section-menu__submenu-link">Шестое название</a>
-									</div>
-								</div>
 							</div>
 						</div>
 						<div class="section-menu__sorting _hasSubMenu">
@@ -135,6 +121,31 @@
 									<a href="" class="section-menu__submenu-link">Еще одно название</a>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="section-menu__submenu _submenu-hidden" id="submenu-1">
+						<div class="section-menu__submenu-inner">
+							<a href="" class="section-menu__submenu-link">Название</a>
+							<a href="" class="section-menu__submenu-link">Еще одно название</a>
+							<a href="" class="section-menu__submenu-link">Третье название</a>
+							<a href="" class="section-menu__submenu-link">Четвертое название</a>
+							<a href="" class="section-menu__submenu-link">Пятое</a>
+							<a href="" class="section-menu__submenu-link">Шестое название</a>
+							<a href="" class="section-menu__submenu-link">Название</a>
+							<a href="" class="section-menu__submenu-link">Еще одно название</a>
+							<a href="" class="section-menu__submenu-link">Третье название</a>
+							<a href="" class="section-menu__submenu-link">Четвертое название</a>
+							<a href="" class="section-menu__submenu-link">Пятое</a>
+							<a href="" class="section-menu__submenu-link">Шестое название</a>
+						</div>
+					</div>
+					<div class="section-menu__submenu _submenu-hidden" id="submenu-2">
+						<div class="section-menu__submenu-inner">
+							<a href="" class="section-menu__submenu-link">Еще одно название</a>
+							<a href="" class="section-menu__submenu-link">Третье название</a>
+							<a href="" class="section-menu__submenu-link">Четвертое название</a>
+							<a href="" class="section-menu__submenu-link">Пятое</a>
+							<a href="" class="section-menu__submenu-link">Шестое название</a>
 						</div>
 					</div>
 				</div>
@@ -528,7 +539,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250319132432"></script>
+	<script src="js/app.min.js?_v=20250321085426"></script>
 </body>
 
 </html>

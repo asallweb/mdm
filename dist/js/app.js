@@ -3353,6 +3353,25 @@
             }));
         }));
     }));
+    document.addEventListener("click", (event => {
+        const link = event.target.closest(".section-menu__menu-link[data-submenu]");
+        const allSubmenus = document.querySelectorAll("._submenu-hidden");
+        if (!link && !event.target.closest("._submenu-hidden")) {
+            allSubmenus.forEach((submenu => submenu.classList.remove("_active")));
+            return;
+        }
+        if (link) {
+            event.preventDefault();
+            const submenuId = link.getAttribute("data-submenu");
+            const submenu = document.getElementById(submenuId);
+            allSubmenus.forEach((sub => sub.classList.remove("_active")));
+            const linkRect = link.getBoundingClientRect();
+            const offsetTop = window.innerWidth <= 768 ? 50 : 60;
+            submenu.style.top = `${offsetTop}px`;
+            submenu.style.left = `${window.scrollX + linkRect.left}px`;
+            submenu.classList.add("_active");
+        }
+    }));
     window["FLS"] = false;
     pageNavigation();
 })();
