@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250324101712">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250402094230">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,6 +76,78 @@
 				</button>
 				<button class="ask-question-btn">Задать вопрос</button>
 			</section>
+			<div class="soc-widget">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&_v=20250402094230" rel="stylesheet">
+				<div class="soc-widget__wrapper">
+					<a href="" class="soc-widget__link"><img src="img/icons/icon-sms.svg" class=""></a>
+					<a href="" class="soc-widget__link"><img src="img/icons/icon-instagram.svg" class=""></a>
+					<a href="" class="soc-widget__link"><img src="img/icons/icon-dzen.svg" class=""></a>
+				</div>
+				<div class="soc-widget__text">ПОДПИСАТЬСЯ</div>
+				<div class="soc-widget__close"><img src="img/icons/icon-close.svg" class=""></div>
+				<style>
+					.soc-widget {
+						position: fixed;
+						z-index: 10;
+						right: 10px;
+						top: 30vh;
+						padding: 25px 14px;
+						background-color: #fff;
+						border-radius: 64px;
+						box-shadow: 5px 15px 25px 0px rgba(0, 0, 0, 0.19);
+					}
+
+					.soc-widget__wrapper {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						margin-right: 10px;
+					}
+
+					.soc-widget__link {
+						text-align: center;
+					}
+
+					.soc-widget__text {
+						position: absolute;
+						transform: rotate(-90deg);
+						color: #000;
+						font-family: Roboto;
+						font-size: 11px;
+						line-height: 1;
+						text-transform: uppercase;
+						top: 60px;
+						left: 10px;
+					}
+
+					.soc-widget__close {
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translate(-50%, 50%);
+						cursor: pointer;
+						transition: opacity .3s ease-out;
+					}
+
+					.soc-widget__close:hover {
+						opacity: 0.9;
+					}
+				</style>
+				<script>
+					document.addEventListener("DOMContentLoaded", function() {
+						const widget = document.querySelector(".soc-widget");
+						const closeButton = document.querySelector(".soc-widget__close");
+
+						if (widget && closeButton) {
+							closeButton.addEventListener("click", function() {
+								widget.style.display = "none";
+							});
+						}
+					});
+				</script>
+			</div>
 			<div class="day-theme">
 				<div class="day-theme__date">Сегодня: 12 февраля 2025 г.</div>
 				<div class="day-theme__title">Разбираем житейские вопросы с православной точки зрения. Вы можете отправить свой вопрос через форму обратной связи.</div>
@@ -539,7 +611,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250324101712"></script>
+	<script src="js/app.min.js?_v=20250402094230"></script>
 </body>
 
 </html>
