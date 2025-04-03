@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250402094230">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250403182848">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,9 +79,9 @@
 			<div class="soc-widget">
 				<link rel="preconnect" href="https://fonts.googleapis.com">
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-				<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&_v=20250402094230" rel="stylesheet">
+				<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&_v=20250403182848" rel="stylesheet">
 				<div class="soc-widget__wrapper">
-					<a href="" class="soc-widget__link"><img src="img/icons/icon-sms.svg" class=""></a>
+					<a href="" class="soc-widget__link _open-widget-form"><img src="img/icons/icon-sms.svg" class=""></a>
 					<a href="" class="soc-widget__link"><img src="img/icons/icon-instagram.svg" class=""></a>
 					<a href="" class="soc-widget__link"><img src="img/icons/icon-dzen.svg" class=""></a>
 				</div>
@@ -148,6 +148,444 @@
 					});
 				</script>
 			</div>
+			<div class="widget-popup" id="widget-form">
+				<div class="widget-popup__wrapper">
+					<button class="widget-popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path d="M0.272237 19.7272C0.445162 19.8932 0.672792 19.9902 0.912274 20C1.15174 19.9901 1.37934 19.8931 1.55231 19.7272L10 11.2725L18.4549 19.7272C18.5371 19.8132 18.6358 19.8817 18.7452 19.9285C18.8546 19.9753 18.9723 19.9994 19.0913 19.9994C19.2103 19.9994 19.328 19.9753 19.4374 19.9285C19.5468 19.8817 19.6456 19.8132 19.7278 19.7272C19.8138 19.645 19.8823 19.5463 19.9291 19.4369C19.9759 19.3275 20 19.2097 20 19.0908C20 18.9718 19.9759 18.8541 19.9291 18.7447C19.8823 18.6353 19.8138 18.5365 19.7278 18.4544L11.2721 9.99971L19.727 1.54507C19.813 1.4629 19.8815 1.36413 19.9283 1.25475C19.9751 1.14536 19.9992 1.02762 19.9992 0.908647C19.9992 0.789674 19.9751 0.671935 19.9283 0.562549C19.8815 0.453162 19.813 0.354399 19.727 0.272229C19.6448 0.186189 19.546 0.117705 19.4366 0.0709145C19.3272 0.0241242 19.2095 0 19.0905 0C18.9715 0 18.8538 0.0241242 18.7444 0.0709145C18.635 0.117705 18.5363 0.186189 18.4541 0.272229L10 8.72687L1.54511 0.272229C1.46294 0.186189 1.36417 0.117705 1.25478 0.0709145C1.14539 0.0241242 1.02765 0 0.908674 0C0.789697 0 0.671955 0.0241242 0.562565 0.0709145C0.453175 0.117705 0.354409 0.186189 0.272237 0.272229C0.186195 0.354399 0.117708 0.453162 0.0709166 0.562549C0.0241249 0.671935 0 0.789674 0 0.908647C0 1.02762 0.0241249 1.14536 0.0709166 1.25475C0.117708 1.36413 0.186195 1.4629 0.272237 1.54507L8.72713 9.99971L0.272237 18.4544C0.186195 18.5365 0.117708 18.6353 0.0709166 18.7447C0.0241249 18.8541 0 18.9718 0 19.0908C0 19.2097 0.0241249 19.3275 0.0709166 19.4369C0.117708 19.5463 0.186195 19.645 0.272237 19.7272Z" fill="black" />
+						</svg>
+					</button>
+					<div class="widget-popup__content">
+						<div class="widget-popup__title">Выберите темы, которые вы желаете получать</div>
+						<label class="checkbox__container">
+							<b>Житие святых</b> (3–7 раз в неделю)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox__container">
+							<b>Новости Московского Данилова монастыря</b> (1–3 раза в месяц)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox__container">
+							<b>Статьи из журнала «Прихожанин»</b> (1–3 раза в месяц)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox__container">
+							<b>Церковные праздники</b> (1–3 раза в месяц)
+							<input type="checkbox" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<hr>
+						<div class="form-field__grid">
+							<div class="form-field">
+								<div class="form-field__title">Адрес электронной почты</div>
+								<input type="text" class="form-field__input" placeholder="test@test.ru">
+							</div>
+							<div class="form-field">
+								<div class="form-field__title">Ваше имя</div>
+								<input type="text" class="form-field__input _error" placeholder="Введите имя">
+							</div>
+						</div>
+						<div class="form-field__grid">
+							<div class="form-field">
+								<input type="submit" class="form-field__input" value="Подписаться">
+							</div>
+							<div class="form-field _form-error-text">
+								Заполните все поля
+							</div>
+						</div>
+						<hr>
+						<div class="widget-popup__title">Будьте на связи с Московским <br> Даниловым монастырем!</div>
+						<div class="widget-popup__text">
+							<p><b>Хотите всегда быть в курсе важнейших событий, духовных наставлений и церковных праздников? Оперативное изменение в расписании службы.</b></p>
+							<p>Подписывайтесь на наши социальные сети и мессенджеры и получайте вдохновение каждый день!</p>
+							<p>Познавательные статьи и православные истории, оперативные новости и важные сообщения, глубокие размышления и наставления</p>
+						</div>
+						<div class="widget-popup__list">
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.27525 0C7.23747 3.0404 7.02994 4.74925 5.8896 5.88959C4.74925 7.02992 3.0404 7.23747 0 7.27524V7.72475C3.0404 7.76253 4.74926 7.97006 5.8896 9.11041C7.02994 10.2507 7.23747 11.9596 7.27525 15H7.72475C7.76253 11.9596 7.97008 10.2508 9.11041 9.1104C10.2507 7.97006 11.9596 7.76253 15 7.72475V7.27524C11.9596 7.23746 10.2508 7.02992 9.1104 5.88959C7.97006 4.74925 7.76253 3.04039 7.72475 0H7.27525Z" fill="white" />
+									</svg>
+								</div>
+								Яндекс Дзен
+							</a>
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left: 2px; margin-bottom: 2px;">
+										<g clip-path="url(#clip0_1158_934)">
+											<path d="M3.10957 11.1124C3.99304 11.5931 4.98783 11.8455 6 11.8455C9.30783 11.8455 12 9.18798 12 5.92275C12 2.65751 9.30783 0 6 0C2.69217 0 0 2.65751 0 5.92275C0 6.97167 0.28 7.99828 0.813913 8.90129L0.0504348 12L3.10957 11.1124ZM3.42783 3.15536C3.55478 3.04034 3.72 2.97854 3.89217 2.97854H4.07478C4.31652 2.97854 4.53217 3.1279 4.61391 3.35107L4.98783 4.36738C5.02261 4.46352 5.00522 4.56996 4.94087 4.65064L4.64522 5.01459C4.5287 5.15708 4.49739 5.35107 4.56522 5.52103C4.92348 6.4103 5.98783 7.03519 6.54435 7.30987C6.74609 7.40944 6.98783 7.37167 7.14783 7.21545L7.47478 6.8927C7.55304 6.81545 7.66957 6.78798 7.77565 6.8206L8.76696 7.13305C9.00522 7.20858 9.16696 7.42661 9.16696 7.67382V7.92275C9.16696 8.10472 9.09391 8.27983 8.96348 8.40858C7.99826 9.34936 6.39652 8.65923 5.35826 8.0309C4.61043 7.57768 3.95826 6.98197 3.47304 6.25923C2.29913 4.50987 3.01217 3.52961 3.42783 3.15536Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1158_934">
+												<rect width="12" height="12" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								Whatsapp
+							</a>
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none" style="margin-left: -3px; margin-bottom: -1px;">
+										<path d="M12.8064 0.105939C12.8064 0.105939 14.1015 -0.413489 13.9936 0.847981C13.9576 1.36742 13.6339 3.18541 13.382 5.15184L12.5186 10.9769C12.5186 10.9769 12.4467 11.8302 11.7991 11.9786C11.1516 12.127 10.1803 11.4592 10.0004 11.3108C9.85647 11.1995 7.30227 9.52988 6.40287 8.71364C6.15104 8.49102 5.86324 8.04579 6.43884 7.52636L10.2162 3.81617C10.6479 3.37094 11.0796 2.33208 9.28087 3.59355L4.24437 7.11826C4.24437 7.11826 3.66877 7.48926 2.58954 7.15536L0.25114 6.41331C0.25114 6.41331 -0.612264 5.85678 0.862717 5.30022C4.46024 3.55642 8.88517 1.77552 12.8064 0.105939Z" fill="white" />
+									</svg>
+								</div>
+								Telegram
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="widget-popup _opened" id="widget-form-thankyou">
+				<div class="widget-popup__wrapper">
+					<button class="widget-popup__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path d="M0.272237 19.7272C0.445162 19.8932 0.672792 19.9902 0.912274 20C1.15174 19.9901 1.37934 19.8931 1.55231 19.7272L10 11.2725L18.4549 19.7272C18.5371 19.8132 18.6358 19.8817 18.7452 19.9285C18.8546 19.9753 18.9723 19.9994 19.0913 19.9994C19.2103 19.9994 19.328 19.9753 19.4374 19.9285C19.5468 19.8817 19.6456 19.8132 19.7278 19.7272C19.8138 19.645 19.8823 19.5463 19.9291 19.4369C19.9759 19.3275 20 19.2097 20 19.0908C20 18.9718 19.9759 18.8541 19.9291 18.7447C19.8823 18.6353 19.8138 18.5365 19.7278 18.4544L11.2721 9.99971L19.727 1.54507C19.813 1.4629 19.8815 1.36413 19.9283 1.25475C19.9751 1.14536 19.9992 1.02762 19.9992 0.908647C19.9992 0.789674 19.9751 0.671935 19.9283 0.562549C19.8815 0.453162 19.813 0.354399 19.727 0.272229C19.6448 0.186189 19.546 0.117705 19.4366 0.0709145C19.3272 0.0241242 19.2095 0 19.0905 0C18.9715 0 18.8538 0.0241242 18.7444 0.0709145C18.635 0.117705 18.5363 0.186189 18.4541 0.272229L10 8.72687L1.54511 0.272229C1.46294 0.186189 1.36417 0.117705 1.25478 0.0709145C1.14539 0.0241242 1.02765 0 0.908674 0C0.789697 0 0.671955 0.0241242 0.562565 0.0709145C0.453175 0.117705 0.354409 0.186189 0.272237 0.272229C0.186195 0.354399 0.117708 0.453162 0.0709166 0.562549C0.0241249 0.671935 0 0.789674 0 0.908647C0 1.02762 0.0241249 1.14536 0.0709166 1.25475C0.117708 1.36413 0.186195 1.4629 0.272237 1.54507L8.72713 9.99971L0.272237 18.4544C0.186195 18.5365 0.117708 18.6353 0.0709166 18.7447C0.0241249 18.8541 0 18.9718 0 19.0908C0 19.2097 0.0241249 19.3275 0.0709166 19.4369C0.117708 19.5463 0.186195 19.645 0.272237 19.7272Z" fill="black" />
+						</svg>
+					</button>
+					<div class="widget-popup__content">
+						<div class="widget-popup__title">Спасибо за подписку</div>
+						<div class="widget-popup__text">
+							<p><b>Спасибо, что подписались!</b></p>
+							<p>Подтвердите подписку по ссылке в письме чтобы получать новости</p>
+						</div>
+						<hr>
+						<div class="widget-popup__text">
+							<p><b>Будьте на связи с Московским Даниловым монастырем! </b></p>
+						</div>
+						<div class="widget-popup__list">
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.27525 0C7.23747 3.0404 7.02994 4.74925 5.8896 5.88959C4.74925 7.02992 3.0404 7.23747 0 7.27524V7.72475C3.0404 7.76253 4.74926 7.97006 5.8896 9.11041C7.02994 10.2507 7.23747 11.9596 7.27525 15H7.72475C7.76253 11.9596 7.97008 10.2508 9.11041 9.1104C10.2507 7.97006 11.9596 7.76253 15 7.72475V7.27524C11.9596 7.23746 10.2508 7.02992 9.1104 5.88959C7.97006 4.74925 7.76253 3.04039 7.72475 0H7.27525Z" fill="white" />
+									</svg>
+								</div>
+								Яндекс Дзен
+							</a>
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left: 2px; margin-bottom: 2px;">
+										<g clip-path="url(#clip0_1158_934)">
+											<path d="M3.10957 11.1124C3.99304 11.5931 4.98783 11.8455 6 11.8455C9.30783 11.8455 12 9.18798 12 5.92275C12 2.65751 9.30783 0 6 0C2.69217 0 0 2.65751 0 5.92275C0 6.97167 0.28 7.99828 0.813913 8.90129L0.0504348 12L3.10957 11.1124ZM3.42783 3.15536C3.55478 3.04034 3.72 2.97854 3.89217 2.97854H4.07478C4.31652 2.97854 4.53217 3.1279 4.61391 3.35107L4.98783 4.36738C5.02261 4.46352 5.00522 4.56996 4.94087 4.65064L4.64522 5.01459C4.5287 5.15708 4.49739 5.35107 4.56522 5.52103C4.92348 6.4103 5.98783 7.03519 6.54435 7.30987C6.74609 7.40944 6.98783 7.37167 7.14783 7.21545L7.47478 6.8927C7.55304 6.81545 7.66957 6.78798 7.77565 6.8206L8.76696 7.13305C9.00522 7.20858 9.16696 7.42661 9.16696 7.67382V7.92275C9.16696 8.10472 9.09391 8.27983 8.96348 8.40858C7.99826 9.34936 6.39652 8.65923 5.35826 8.0309C4.61043 7.57768 3.95826 6.98197 3.47304 6.25923C2.29913 4.50987 3.01217 3.52961 3.42783 3.15536Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1158_934">
+												<rect width="12" height="12" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								Whatsapp
+							</a>
+							<a href="" class="widget-popup__link">
+								<div class="widget-popup__link-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none" style="margin-left: -3px; margin-bottom: -1px;">
+										<path d="M12.8064 0.105939C12.8064 0.105939 14.1015 -0.413489 13.9936 0.847981C13.9576 1.36742 13.6339 3.18541 13.382 5.15184L12.5186 10.9769C12.5186 10.9769 12.4467 11.8302 11.7991 11.9786C11.1516 12.127 10.1803 11.4592 10.0004 11.3108C9.85647 11.1995 7.30227 9.52988 6.40287 8.71364C6.15104 8.49102 5.86324 8.04579 6.43884 7.52636L10.2162 3.81617C10.6479 3.37094 11.0796 2.33208 9.28087 3.59355L4.24437 7.11826C4.24437 7.11826 3.66877 7.48926 2.58954 7.15536L0.25114 6.41331C0.25114 6.41331 -0.612264 5.85678 0.862717 5.30022C4.46024 3.55642 8.88517 1.77552 12.8064 0.105939Z" fill="white" />
+									</svg>
+								</div>
+								Telegram
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style>
+				.widget-popup {
+					position: fixed;
+					z-index: 11;
+					inset: 0;
+					background-color: rgba(0, 0, 0, 0.7);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					visibility: hidden;
+					opacity: 0;
+					transition: all .3s ease-out;
+				}
+
+				.widget-popup._opened {
+					visibility: visible;
+					opacity: 1;
+				}
+
+				.widget-popup__wrapper {
+					border-radius: 10px;
+					background: #FFF;
+					box-shadow: 5px 15px 25px 0px rgba(0, 0, 0, 0.19);
+					padding: 60px 70px;
+					position: relative;
+					max-width: 800px;
+					max-height: 95vh;
+					overflow-y: auto;
+				}
+
+				.widget-popup__close {
+					position: absolute;
+					right: 20px;
+					top: 20px;
+				}
+
+				.widget-popup__content {
+					color: #000;
+					font-family: Roboto;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+
+				.widget-popup__title {
+					color: #0F542A;
+					font-family: Angst;
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 1.54;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+
+				.checkbox__container {
+					display: block;
+					position: relative;
+					padding-left: 30px;
+					cursor: pointer;
+					user-select: none;
+					margin-bottom: 15px;
+				}
+
+				.checkbox__container input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					height: 0;
+					width: 0;
+				}
+
+				.checkbox__container .checkmark {
+					position: absolute;
+					top: -2px;
+					left: 0;
+					height: 20px;
+					width: 20px;
+					background-color: transparent;
+					border: 1px solid rgba(255, 255, 255, 0.5);
+					border-top-color: rgba(255, 255, 255, 0.5);
+					border-right-color: rgba(255, 255, 255, 0.5);
+					border-bottom-color: rgba(255, 255, 255, 0.5);
+					border-left-color: rgba(255, 255, 255, 0.5);
+					border-radius: 4px;
+				}
+
+				.checkbox__container input:checked~.checkmark {
+					background-color: #FFAC09;
+					border-color: transparent;
+				}
+
+				.checkbox__container .checkmark::after {
+					content: "";
+					position: absolute;
+					display: none;
+					left: 7px;
+					top: 2px;
+					width: 6px;
+					height: 12px;
+					border: solid #0a4926;
+					border-top-width: medium;
+					border-right-width: medium;
+					border-bottom-width: medium;
+					border-left-width: medium;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg);
+				}
+
+				.checkbox__container input:checked~.checkmark::after {
+					display: block;
+				}
+
+				.widget-popup hr {
+					margin: 40px 0;
+					background-color: #D1D1D1;
+					height: 1px;
+					width: 100%;
+				}
+
+				.widget-popup .form-field__grid {
+					display: flex;
+					gap: 30px;
+					margin-bottom: 15px;
+				}
+
+				.widget-popup .form-field {}
+
+				.widget-popup .form-field__title {
+					color: #000;
+					font-family: Roboto;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 1.44;
+					margin-bottom: 15px;
+				}
+
+				.widget-popup .form-field__input:not([type="submit"]) {
+					border-radius: 4px;
+					border: 1px solid #D1D1D1;
+					background: #F4F4F4;
+					height: 50px;
+					width: 100%;
+					padding: 5px 10px;
+				}
+
+				.widget-popup .form-field__input:not([type="submit"]):focus {
+					outline: none;
+				}
+
+				.widget-popup .form-field__input[type="submit"] {
+					border-radius: 8px;
+					background: #FFC10E;
+					width: 198px;
+					height: 50px;
+					color: #1E1F1F;
+					font-family: Roboto;
+					font-size: 16px;
+					font-weight: 700;
+					display: flex;
+					align-items: center;
+					padding: 5px 10px;
+				}
+
+				.widget-popup .form-field__input[type="submit"]:hover {
+					opacity: 0.8;
+				}
+
+				.widget-popup .form-field__input._error {
+					border: 1px solid #F00;
+				}
+
+				.widget-popup .form-field._form-error-text {
+					color: #F00;
+					font-size: 16px;
+					font-family: Roboto;
+					display: flex;
+					align-items: center;
+					font-weight: 400;
+				}
+
+				.widget-popup__text p {
+					margin-bottom: 20px;
+				}
+
+				.widget-popup__list {
+					display: flex;
+					align-items: center;
+					gap: 19px;
+					flex-wrap: wrap;
+					margin-top: 40px;
+				}
+
+				.widget-popup__link {
+					border-radius: 64px;
+					border: 1px solid #D1D1D1;
+					background: #F4F4F4;
+					padding: 10px 20px 10px 10px;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+
+				.widget-popup__link:hover {
+					background: #0F542A;
+					color: #fff;
+				}
+
+				.widget-popup__link-icon {
+					background-color: #0F542A;
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+					flex: 0 0 auto;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-right: auto;
+				}
+
+				.widget-popup__link:hover .widget-popup__link-icon {
+					border: 1px solid #fff;
+				}
+
+				@media (max-width: 768px) {
+					.widget-popup__wrapper {
+						border-radius: 0;
+						padding: 30px 15px;
+						height: 100vh;
+						max-height: 100vh;
+					}
+
+					.widget-popup__close {
+						right: 15px;
+						top: 15px;
+					}
+
+					.widget-popup__content {
+						font-size: 14px;
+					}
+
+					.widget-popup__title {
+						font-size: 18px;
+						letter-spacing: 0.36px;
+					}
+
+					.widget-popup hr {
+						margin: 30px 0;
+					}
+
+					.widget-popup .form-field__grid {
+						gap: 20px;
+						margin-bottom: 20px;
+						flex-direction: column;
+					}
+
+					.widget-popup__text p {
+						margin-bottom: 10px;
+					}
+
+					.widget-popup__list {
+						gap: 12px;
+						margin-top: 30px;
+					}
+				}
+			</style>
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					document.body.addEventListener('click', (event) => {
+						const target = event.target;
+
+						// Открытие формы
+						if (target.closest('._open-widget-form')) {
+							event.preventDefault(); // Предотвращаем переход по ссылке
+							document.querySelector('#widget-form')?.classList.add('_opened');
+						}
+
+						// Закрытие всех popup-ов при клике на .widget-popup__close
+						if (target.closest('.widget-popup__close')) {
+							event.preventDefault();
+							document.querySelectorAll('.widget-popup').forEach(popup => {
+								popup.classList.remove('_opened');
+							});
+						}
+
+						// Закрытие .widget-popup при клике вне .widget-popup__wrapper
+						if (!target.closest('.widget-popup__wrapper') && target.closest('.widget-popup')) {
+							target.closest('.widget-popup').classList.remove('_opened');
+						}
+					});
+				});
+			</script>
 			<div class="day-theme">
 				<div class="day-theme__date">Сегодня: 12 февраля 2025 г.</div>
 				<div class="day-theme__title">Разбираем житейские вопросы с православной точки зрения. Вы можете отправить свой вопрос через форму обратной связи.</div>
@@ -611,7 +1049,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250402094230"></script>
+	<script src="js/app.min.js?_v=20250403182848"></script>
 </body>
 
 </html>
